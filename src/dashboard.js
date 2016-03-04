@@ -1,6 +1,7 @@
 import React from 'react';
 import jQuery from 'jquery';
-import NewsItem from './newsItem'
+import News1 from './news1'
+import News2 from './news2'
 
 class Dashboard extends React.Component {
   constructor() {
@@ -37,24 +38,14 @@ class Dashboard extends React.Component {
   render(){
     var news1;
        if (this.props.check1 === true) {
-         news1 = "poep"
-        //  {this.state.news1.map(function(news, i) {
-        //    return(
-        //      <NewsItem title={news.title} link={news.link} description={news.description} />
-        //    );
-        //  })}
+         news1 = <News1 list1={this.state.news1}/>
        }
        else {
          news1 = ""
        }
     var news2;
        if (this.props.check2 === true) {
-         news2 = "poep2"
-        //  {this.state.news2.map(function(news, i) {
-        //    return(
-        //      <NewsItem title={news.title} link={news.link} description={news.description} />
-        //    );
-        //  })}
+         news2 = <News2 list2={this.state.news2}/>
        }
        else {
          news2= ""
