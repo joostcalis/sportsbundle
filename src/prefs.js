@@ -8,25 +8,24 @@ class Prefs extends React.Component {
    super();
  }
 
+ selectLeague(event) {
+   console.log(event.target);
+ }
 
- renderAl() {
-   return <Al />;
-  }
-
-  renderNl() {
-    return <Nl />;
-   }
-
-
-
+renderLeague() {
+  return(
+    <Nl />
+  );
+}
 
 
  render() {
    return(
      <div className="container">
        <h2>choose your destiny:</h2>
-          <button onClick={this.renderAl} className="btn btn-default">American League</button>
+          <button onClick={this.selectLeague.bind(this)} data-league="al" className="btn btn-default">American League</button>
           <button onClick={this.renderNl} className="btn btn-default">National League</button>
+          {/*{ this.renderLeague() }*/}
      </div>
    );
  }
