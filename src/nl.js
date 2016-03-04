@@ -13,23 +13,25 @@ class Nl extends React.Component {
  getNews() {
    let component = this;
 
-   jQuery.getJSON("", function(data) {
-     console.log("getting nl news");
-     component.setState({
-       nl_news: data
-     });
+   $(document).ready(function () {
+       $.ajax({
+           type: "GET",
+           url: "http://mlb.mlb.com/partnerxml/gen/news/rss/mlb.xml",
+           cache: false,
+           dataType: "xml",
+           success: function(xml) {
+               $(xml).find('channel').each(function(){
+                   var name = $(this).find("title").text()
+                   alert(name);
+               });
+           }
+       });
    });
   }
 
   render(){
     return(
-      <div>
-        {this.state.nl_news.map(function(newsitem, i) {
-          return (
-            {newsitem}
-          );
-        }, this)}
-      </div>
+    
     );
   }
 }
