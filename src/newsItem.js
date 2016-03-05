@@ -21,10 +21,11 @@ componentDidMount(){
 
   render(){
     return(
-        <div className="col-md-12">
+        <div>
           <div className="col-style margin-row">
             <h3>{this.state.title}</h3>
-            <a href="{this.state.link}">lol</a>
+            <h1>{this.state.description}</h1>
+            <a href="{this.state.link}">go to article</a>
             </div>
         </div>
     );

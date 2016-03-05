@@ -22,9 +22,7 @@ class App extends React.Component {
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
       </ul>
-      <ul className="nav navbar-nav navbar-right">
-          <li className="btn-login"><a href="#" className="btn btn-primary" >Login</a></li>
-      </ul>
+
     </div>
   </div>
   </nav>

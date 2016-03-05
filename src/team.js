@@ -3,7 +3,7 @@ import jQuery from 'jquery';
 import NewsItem from './newsItem'
 import SkyLight from 'react-skylight'
 
-class News2 extends React.Component {
+class Team extends React.Component {
   constructor() {
    super();
  }
@@ -20,12 +20,12 @@ class News2 extends React.Component {
       marginLeft: '-35%',
     };
 
-    var news2last5 = this.props.list2.slice(0,5);
+    var teamlast5 = this.props.team.slice(0,5);
     return(
     <div className="row">
-    <h3>Baseball America</h3>
+    <h3>Your favourite teams news</h3>
     <button onClick={() => this.refs.simpleDialog.show()}>
-    {news2last5.map(function(news, i) {
+    {teamlast5.map(function(news, i) {
       return(
         <p>{news.title}</p>
       );
@@ -33,7 +33,7 @@ class News2 extends React.Component {
     </button>
 
     <SkyLight dialogStyles={myBigGreenDialog} hideOnOverlayClicked ref="simpleDialog" title="News">
-      {this.props.list2.map(function(news, i) {
+      {this.props.team.map(function(news, i) {
         return(
           <NewsItem title={news.title} link={news.link} description={news.description} />
         );
@@ -44,4 +44,4 @@ class News2 extends React.Component {
   }
 }
 
-export default News2;
+export default Team;

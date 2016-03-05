@@ -70,6 +70,9 @@ h3 {
 
 }
 
+p {
+  color: #49556B;
+}
 .margin-row {
   margin-top: 30px;
 }
@@ -90,7 +93,8 @@ h3 {
 
 #ck-button label {
     float:left;
-    width:4.0em;
+    width: auto;
+
 }
 
 #ck-button label span {.margin-row {
@@ -98,6 +102,8 @@ h3 {
 }
     text-align:center;
     padding:0px 0px;
+    padding-left: 12px;
+    padding-right: 12px;
     display:block;
 }
 
@@ -105,6 +111,8 @@ h3 {
     position:absolute;
     top:-20px;
 }
+
+
 
 #ck-button input:checked + span {
     background-color:#1BA8ED;
