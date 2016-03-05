@@ -2,26 +2,33 @@ import React from 'react';
 import jQuery from 'jquery';
 import News1 from './news1'
 import News2 from './news2'
+import Team from './team'
 
 class Dashboard extends React.Component {
   constructor() {
    super();
    this.state = {
      news1: [],
-     news2: []
+     news2: [],
+     team: [],
+     teamchoice: ""
+
    };
  }
 
 
  showNews(event) {
    let component = this;
+   let teamchoice = this.props.teamchoice;
+   console.log(teamchoice)
 
    jQuery.getJSON("https://sportapi.herokuapp.com/news.json", function(data) {
      console.log(data);
 
      component.setState({
        news1: data.mlb_news.rss.channel.item,
-       news2: data.baseball_america_news.rss.channel.item
+       news2: data.baseball_america_news.rss.channel.item,
+       team: data.teamchoice.rss.channel.item
      });
    });
  }
@@ -52,6 +59,9 @@ class Dashboard extends React.Component {
        }
     return(
     <div>
+    <div className="row">
+        <Team team={this.state.team} />
+    </div>
     <div className="row">
         {news1}
     </div>
