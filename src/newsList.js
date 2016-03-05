@@ -18,7 +18,7 @@ class NewsList extends React.Component {
      console.log(data);
 
      component.setState({
-       news: data.news.rss.channel.item
+       news: data.news
      });
    });
  }

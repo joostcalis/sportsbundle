@@ -1,0 +1,114 @@
+body {
+  background-color: #ADBCC9;
+}
+
+.margin-right-small {
+  margin-right: 15px;
+}
+
+.navbar-style {
+  background-color: #2E333F;
+}
+
+.brand-style {
+  color: white;
+}
+
+.brand-style a {
+  color: white;
+}
+
+a.navbar {
+  color: white;
+}
+
+.navbar-default {
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ADBCC9;
+}
+
+.btn-login {
+}
+
+.btn-primary {
+  background-color: #49556B;
+  color: #2E333F;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.col-style {
+  background-color: white;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px #ADBCC9;
+}
+
+.blue-font {
+  color: #1BA8ED;
+}
+
+h2 {
+  color: #49556B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  color: #49556B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+
+}
+
+.margin-row {
+  margin-top: 30px;
+}
+
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    overflow:auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    float:left;
+    color: #49556B;
+}
+
+#ck-button:hover {
+    background:#1BA8ED;
+}
+
+#ck-button label {
+    float:left;
+    width:4.0em;
+}
+
+#ck-button label span {.margin-row {
+  margin-top: 40px;
+}
+    text-align:center;
+    padding:0px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#1BA8ED;
+    color:#fff;
+}
+
+.clear {clear: both;}

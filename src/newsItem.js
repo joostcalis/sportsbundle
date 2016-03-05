@@ -21,10 +21,11 @@ componentDidMount(){
 
   render(){
     return(
-        <div className="col-md-4">
-          <h2>{this.state.title}</h2>
-          <p>{this.state.description}</p>
-          <a href="{this.state.link}">lol</a>
+        <div className="col-md-12">
+          <div className="col-style margin-row">
+            <h3>{this.state.title}</h3>
+            <a href="{this.state.link}">lol</a>
+            </div>
         </div>
     );
   }

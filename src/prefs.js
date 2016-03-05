@@ -47,22 +47,26 @@ isChecked2() {
    return(
      <div className="container">
      <div className="row">
-       <h2>choose your destiny:</h2>
+       <h2 className="choice-header">Almost done, Choose your <span className="blue-font">favorite team(s):</span> </h2>
+          <div id="ck-button">
             <label>
               <input
                 type="checkbox"
                 checked={this.state.checked1}
                 onChange={this.isChecked1.bind(this)} />
-              select
+              News 1
             </label>
+          </div>
+            <div id="ck-button">
             <label>
               <input
                 type="checkbox"
                 checked={this.state.checked2}
                 onChange={this.isChecked2.bind(this)} />
-              select
+              News 2
             </label>
-
+          </div>
+          <div class="clear"></div>
           {renderDashboard}
 
       </div>

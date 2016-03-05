@@ -20,8 +20,8 @@ class Dashboard extends React.Component {
      console.log(data);
 
      component.setState({
-       news1: data.mlb_news.rss.channel.item,
-       news2: data.baseball_america_news.rss.channel.item
+       news1: data.mlb_news,
+       news2: data.baseball_america_news
      });
    });
  }
@@ -52,6 +52,7 @@ class Dashboard extends React.Component {
        }
     return(
     <div>
+    <div class="clear"></div>
     <div className="row">
         {news1}
     </div>
